@@ -1,0 +1,42 @@
+{
+    "name": "netguru-app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "ajv": "^6.4.0",
+        "axios": "^0.17.1",
+        "jquery": "^2.2.1",
+        "lodash": "^4.17.5",
+        "node-sass-chokidar": "0.0.3",
+        "npm-run-all": "^4.1.2",
+        "react": "^16.3.2",
+        "react-dom": "^16.3.2",
+        "react-modal": "^3.4.4",
+        "react-redux": "^5.0.7",
+        "react-scripts": "1.1.0",
+        "redux": "^3.7.2",
+        "redux-promise": "^0.5.3"
+    },
+    "scripts": {
+        "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+        "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+        "start-js": "react-scripts start",
+        "start": "npm-run-all -p watch-css start-js",
+        "build-js": "react-scripts build",
+        "build": "npm-run-all build-css build-js",
+        "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+        "test:watch": "npm run test-mocha -- --watch",
+        "eject": "react-scripts eject"
+    },
+    "devDependencies": {
+        "babel-core": "^6.2.1",
+        "babel-loader": "^7.1.4",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-stage-1": "^6.1.18",
+        "babel-preset-react": "^6.1.18",
+        "chai": "^3.5.0",
+        "chai-jquery": "^2.0.0",
+        "jsdom": "^8.1.0",
+        "mocha": "^2.4.5"
+    }
+}

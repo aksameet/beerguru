@@ -1,0 +1,307 @@
+.beers__container {
+  background-color: #f8f8f8;
+  width: 100%;
+  height: 100%;
+  padding: 40px; }
+  @media (max-width: 850px) {
+    .beers__container {
+      padding: 20px; } }
+  @media (max-width: 850px) {
+    .beers__container {
+      padding: 13.33333px; } }
+  .beers__container__title {
+    margin: 30px 15px; }
+    .beers__container__title > :nth-child(-n+2) {
+      font-size: 26px;
+      font-weight: bold;
+      display: inline-block;
+      text-transform: uppercase; }
+    .beers__container__title > :nth-child(1) {
+      color: #f5c34e; }
+    .beers__container__title > :nth-child(2) {
+      color: #707070; }
+  .beers__container__list {
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    @media (max-width: 500px) {
+      .beers__container__list {
+        align-items: center;
+        flex-direction: column; } }
+    .beers__container__list-elements {
+      width: calc((calc(100% / 3) - 30px));
+      display: flex;
+      flex-direction: column;
+      padding: 30px 15px;
+      background-color: #fff;
+      border-radius: 4px;
+      margin: 15px;
+      text-align: center;
+      cursor: pointer; }
+      @media (max-width: 850px) {
+        .beers__container__list-elements {
+          width: calc((calc(100% / 3) - 20px)); } }
+      @media (max-width: 500px) {
+        .beers__container__list-elements {
+          width: 90%;
+          margin: 15px auto; } }
+      @media (max-width: 850px) {
+        .beers__container__list-elements {
+          margin: 10px; } }
+      @media (max-width: 500px) {
+        .beers__container__list-elements {
+          margin: 5px; } }
+      .beers__container__list-elements__img {
+        display: block;
+        height: 180px;
+        margin: 0 auto 15px; }
+      .beers__container__list-elements__name {
+        font-size: 18px;
+        color: #f5c34e;
+        font-weight: bold;
+        margin-bottom: 0; }
+        @media (max-width: 850px) {
+          .beers__container__list-elements__name {
+            font-size: 16px; } }
+      .beers__container__list-elements__tagline {
+        font-size: 16px;
+        color: #707070;
+        margin: auto; }
+        @media (max-width: 850px) {
+          .beers__container__list-elements__tagline {
+            font-size: 14px; } }
+      .beers__container__list-elements:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); }
+    .beers__container__list li:last-of-type {
+      margin-right: auto; }
+      @media (max-width: 500px) {
+        .beers__container__list li:last-of-type {
+          margin: 15px auto; } }
+
+.beer__modal {
+  padding: 30px 15px;
+  font-size: 14px; }
+  @media (max-width: 850px) {
+    .beer__modal {
+      padding: 15px; } }
+  @media (max-width: 500px) {
+    .beer__modal {
+      font-size: 12px; } }
+  .beer__modal__selected-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%; }
+    @media (max-width: 850px) {
+      .beer__modal__selected-container {
+        flex-direction: column; } }
+  .beer__modal__selected__img {
+    max-width: 100%;
+    height: 300px;
+    margin: auto;
+    display: block; }
+    .beer__modal__selected__img-wrapper {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      padding: 15px;
+      text-align: center; }
+      @media (max-width: 850px) {
+        .beer__modal__selected__img-wrapper {
+          width: 100%; } }
+    @media (max-width: 850px) {
+      .beer__modal__selected__img {
+        height: 200px; } }
+    @media (max-width: 500px) {
+      .beer__modal__selected__img {
+        height: 100px; } }
+  .beer__modal__selected-description {
+    width: 70%;
+    padding: 15px;
+    margin: auto; }
+    @media (max-width: 850px) {
+      .beer__modal__selected-description {
+        width: 100%; } }
+    .beer__modal__selected-description__name {
+      font-size: 22px;
+      color: #707070;
+      font-weight: bold;
+      margin-bottom: 10px; }
+      @media (max-width: 850px) {
+        .beer__modal__selected-description__name {
+          font-size: 18px; } }
+      @media (max-width: 500px) {
+        .beer__modal__selected-description__name {
+          font-size: 16px; } }
+    .beer__modal__selected-description__tagline {
+      font-size: 16px;
+      color: #b9b9b9;
+      margin-bottom: 10px; }
+      @media (max-width: 850px) {
+        .beer__modal__selected-description__tagline {
+          font-size: 15px; } }
+      @media (max-width: 500px) {
+        .beer__modal__selected-description__tagline {
+          font-size: 14px; } }
+    .beer__modal__selected-description__line {
+      display: block;
+      width: 20%;
+      border-bottom: 4px solid #f5c34e; }
+    .beer__modal__selected-description__detalis {
+      margin-top: 18px;
+      display: flex; }
+      .beer__modal__selected-description__detalis p {
+        padding-right: 10px;
+        font-weight: bold;
+        color: #707070; }
+      .beer__modal__selected-description__detalis span {
+        padding-right: 10px;
+        font-weight: normal;
+        color: #b9b9b9; }
+    .beer__modal__selected-description__description {
+      color: #b9b9b9; }
+    .beer__modal__selected-description__food-pairing > :nth-child(1) {
+      margin-bottom: 0;
+      font-weight: bold;
+      color: #707070; }
+    .beer__modal__selected-description__food-pairing > :nth-child(n):not(:nth-child(1)) p {
+      margin-bottom: 0;
+      font-weight: normal;
+      color: #b9b9b9; }
+  .beer__modal__suggestions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px; }
+    .beer__modal__suggestions-container > :nth-child(1) {
+      width: 100%;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #707070; }
+  .beer__modal__suggestions-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% / 3) - 30px);
+    border: 1px solid #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px; }
+    @media (max-width: 850px) {
+      .beer__modal__suggestions-items {
+        width: calc((100% / 3) - 15px); } }
+    @media (max-width: 500px) {
+      .beer__modal__suggestions-items {
+        width: calc((100% / 3) - 5px); } }
+    .beer__modal__suggestions-items__img {
+      height: 100px;
+      margin: auto; }
+      @media (max-width: 850px) {
+        .beer__modal__suggestions-items__img {
+          height: 70px; } }
+      @media (max-width: 500px) {
+        .beer__modal__suggestions-items__img {
+          height: 50px; } }
+    .beer__modal__suggestions-items__name {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-weight: bold;
+      color: #707070; }
+
+.beers__loader {
+  display: block;
+  width: 100%;
+  height: 100px;
+  position: relative; }
+  .beers__loader-container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .beers__loader-ending {
+    margin: auto;
+    color: #f5c34e;
+    font-size: 20px;
+    font-weight: bold; }
+  .beers__loader__similar-beers {
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: relative; }
+    .beers__loader__similar-beers.hidden {
+      display: none; }
+
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: auto; }
+
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #f5c34e;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; }
+
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s; }
+
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
+
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s; }
+
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s; }
+
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s; }
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1); } }
+
+@keyframes sk-cubeGridScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1); }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1); } }

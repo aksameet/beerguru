@@ -1,0 +1,159 @@
+.beer {
+    &__modal {
+        padding: 30px 15px;
+        font-size: 14px;
+        @include mediumDevice {
+            padding: 15px;
+        }
+        @include smallDevice {
+            font-size: 12px;
+        }
+        &__selected {
+            &-container {
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+                @include mediumDevice {
+                    flex-direction: column;
+                }
+            }
+            &__img {
+                &-wrapper {
+                    width: 30%;
+                    @include mediumDevice {
+                        width: 100%;
+                    }
+                    height: 100%;
+                    display: flex;
+                    padding: 15px;
+                    text-align: center;
+                }
+                max-width: 100%;
+                height: 300px;
+                margin: auto;
+                display: block;
+                @include mediumDevice {
+                    height: 200px;
+                }
+                @include smallDevice {
+                    height: 100px;
+                }
+            }
+            &-description {
+                width: 70%;
+                @include mediumDevice {
+                    width: 100%;
+                }
+                padding: 15px;
+                margin: auto;
+                &__name {
+                    font-size: 22px;
+                    color: $color-grey;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    @include mediumDevice {
+                        font-size: 18px;
+                    }
+                    @include smallDevice {
+                        font-size: 16px;
+                    }
+                }
+                &__tagline {
+                    font-size: 16px;
+                    color: $color-lightgrey;
+                    margin-bottom: 10px;
+                    @include mediumDevice {
+                        font-size: 15px;
+                    }
+                    @include smallDevice {
+                        font-size: 14px;
+                    }
+                }
+                &__line {
+                    display: block;
+                    width: 20%;
+                    border-bottom: 4px solid $color-yellow;
+                }
+                &__detalis {
+                    margin-top: 18px;
+                    ;
+                    display: flex;
+                    p {
+                        padding-right: 10px;
+                        font-weight: bold;
+                        color: $color-grey;
+                    }
+                    span {
+                        padding-right: 10px;
+                        font-weight: normal;
+                        color: $color-lightgrey;
+                    }
+                }
+                &__description {
+                    color: $color-lightgrey;
+                }
+                &__food-pairing {
+                    &> :nth-child(1) {
+                        margin-bottom: 0;
+                        font-weight: bold;
+                        color: $color-grey;
+                    }
+                    &> :nth-child(n):not(:nth-child(1)) {
+                        p {
+                            margin-bottom: 0;
+                            font-weight: normal;
+                            color: $color-lightgrey;
+                        }
+                    }
+                }
+            }
+        }
+        &__suggestions {
+            &-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 20px;
+                &> :nth-child(1) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    color: $color-grey;
+                }
+            }
+            &-items {
+                display: flex;
+                flex-wrap: wrap;
+                width: calc((100% / 3) - 30px);
+                @include mediumDevice {
+                    width: calc((100% / 3) - 15px);
+                }
+                @include smallDevice {
+                    width: calc((100% / 3) - 5px);
+                }
+                border: 1px solid $color-pearl;
+                text-align: center;
+                padding: 10px;
+                border-radius: 3px;
+                &__img {
+                    height: 100px;
+                    margin: auto;
+                    @include mediumDevice {
+                        height: 70px;
+                    }
+                    @include smallDevice {
+                        height: 50px;
+                    }
+                }
+                &__name {
+                    width: 100%;
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    font-weight: bold;
+                    color: $color-grey;
+                }
+            }
+        }
+    }
+}
